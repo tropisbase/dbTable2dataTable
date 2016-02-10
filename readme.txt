@@ -63,9 +63,21 @@ You can edit the main `dbTable2dataTable.php` file and change these values :
 
 By default, column names will be the field name (e.g: product_id, custom_field). But if you want to have custom/pretty names you should modify your table and add comments to the fields (e.g : `ALTER TABLE product CHANGE product_id product_id INT( 11 ) COMMENT 'Product ID'`
 
-= Why can I display datas from a Wordpress Table ? =
+= Why can't I display datas from a Wordpress Table ? =
 
-This plugin is not intended to display WordPress datas. It aims to give you the ability to show custom datas from custom tables. I had to extract informations from an ERP and display them.
+This plugin is not intended to display WordPress datas. I blocked this for security reasons. It aims to give you the ability to show custom datas from custom tables. I had to extract informations from an ERP and display them.
+
+= How can I force the plugin to shows WP tables ? =
+
+You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
+
+= Why the language doesn't change? =
+
+You probably misstyped the language name. Make sure you write it exactly with the correct name.
+
+Refer to : https://www.datatables.net/plug-ins/i18n/
+
+E.g for french : `//cdn.datatables.net/plug-ins/1.10.10/i18n/French.json` , the parameter will be `French` with the first letter in uppercase.
 
 == Screenshots ==
 

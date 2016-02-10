@@ -104,12 +104,7 @@ class dbTable2dataTable
             $select[] = $atts['select'];
       }
       
-     if(!is_null($atts['cssclass'])){
-        if(strpos($atts['cssclass'], ','))
-          $cssClass = str_replace(',', ' ', $atts['cssclass']);
-        else
-          $cssClass = $atts['cssclass'];
-     }
+      $cssClass = ( !is_null($atts['cssclass']) AND strpos($atts['cssclass'], ',')) ? str_replace(',', ' ', $atts['cssclass']) : $atts['cssclass'];
 
       $tableRendered .= '<div style="width:'.$atts['width'].'%;"><table class="dbtable2databable '.$cssClass.'">';
         $tableRendered .= '<thead>';
