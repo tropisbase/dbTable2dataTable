@@ -46,7 +46,6 @@ class dbTable2dataTable
             );
     }
 
-
     /**
      * Construct
      *
@@ -56,7 +55,6 @@ class dbTable2dataTable
       global $wpdb;
 
       $atts = shortcode_atts($this->defaults, $atts);
-      echo substr($atts['from'], 0,strlen($wpdb->prefix));
       if(is_null($atts['from']) or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix){
         return '<span style="color:red;">You can not display datas from all tables starting with "'.$wpdb->prefix.'" or you have forgotten to specify the "from" parameter.</span>';
       }
@@ -119,7 +117,6 @@ class dbTable2dataTable
 
             //We get column names
             $myrows = $wpdb->get_results('SHOW full COLUMNS FROM '.$atts['from']);
-            //echo '<pre>';var_dump($myrows);echo '</pre>';
             foreach ($myrows as $oneColumn) {
 
               if(is_null($atts['select'])){

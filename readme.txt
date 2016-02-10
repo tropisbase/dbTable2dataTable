@@ -63,6 +63,10 @@ You can edit the main `dbTable2dataTable.php` file and change these values :
 
 By default, column names will be the field name (e.g: product_id, custom_field). But if you want to have custom/pretty names you should modify your table and add comments to the fields (e.g : `ALTER TABLE product CHANGE product_id product_id INT( 11 ) COMMENT 'Product ID'`
 
+= Why can I display datas from a Wordpress Table ? =
+
+This plugin is not intended to display WordPress datas. It aims to give you the ability to show custom datas from custom tables. I had to extract informations from an ERP and display them.
+
 == Screenshots ==
 
 
