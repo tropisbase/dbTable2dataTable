@@ -21,6 +21,8 @@ Simply add the shortcode `[dbtable]` into an article or a page and you will have
 
 All parameters that contain more than one value have to be separated by commas without spaces.
 
+Minimum needed : `[dbtable from=MysqlTableName]`
+
 1. `select=field1,field2,field3` will display all rows of the table and only specified fields
 2. `except=field1,field2,field3` will display all rows of the table but specified fields
 3. `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut

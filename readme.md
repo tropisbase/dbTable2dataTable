@@ -10,25 +10,27 @@ Simply add the shortcode `[dbtable]` into an article or a page and you will have
 
 All parameters that contain more than one value have to be separated by commas without spaces.
 
-1. `select=field1,field2,field3` will display all rows of the table and only specified fields
-2. `except=field1,field2,field3` will display all rows of the table but specified fields
-3. `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
+Minimum needed : `[dbtable from=MysqlTableName]`
+
+- `select=field1,field2,field3` will display all rows of the table and only specified fields
+- `except=field1,field2,field3` will display all rows of the table but specified fields
+- `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
 
 ## Installation
 
 #### From your WordPress dashboard
 
-1. Visit 'Plugins > Add New'
-2. Search for 'DbTable2DataTable'
-3. Activate DbTable2DataTable from your Plugins page.
-4. That's it!
+- Visit 'Plugins > Add New'
+- Search for 'DbTable2DataTable'
+- Activate DbTable2DataTable from your Plugins page.
+- That's it!
 
 #### From WordPress.org
 
-1. Download DbTable2DataTable.
-2. Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
-3. Activate DbTable2DataTable from your Plugins page.
-4. That's it !
+- Download DbTable2DataTable.
+- Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
+- Activate DbTable2DataTable from your Plugins page.
+- That's it !
 
 ## Frequently Asked Questions
 
