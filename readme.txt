@@ -4,8 +4,7 @@ Tags: datatable, jquery, mysql, table, sortable
 Requires at least: 4.4
 Tested up to: 4.4
 Stable tag: 4.4
-License: Beerware
-License URI: https://en.wikipedia.org/wiki/Beerware
+License: GPLv2 or later
 
 Display mysql datas into datatable.
 
@@ -24,8 +23,11 @@ All parameters that contain more than one value have to be separated by commas w
 Minimum needed : `[dbtable from=MysqlTableName]`
 
 1. `select=field1,field2,field3` will display all rows of the table and only specified fields
-2. `except=field1,field2,field3` will display all rows of the table but specified fields
-3. `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
+2. `except=field1,field2,field3` will display all rows of the table except specified fields
+3. `cssClass=class1,class2` will add class1 and class2 to the <table class=""> attribut
+4. `comments=true|(false)` true will use comments specified in each field of the MySql table as datatable column names. If true and if a comment is missing, the plugin fallback on field name only for the one missing, not for the entire table.
+5. `pagination=true|(false)` will show/hide the bottom pagination links. If false, make sure you have the limit parameter large enough to display all your datas
+6. `limit=25` Display 25 rows by default.
 
 == Installation ==
 
@@ -42,6 +44,9 @@ Minimum needed : `[dbtable from=MysqlTableName]`
 2. Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
 3. Activate 'DbTable to DataTable' from your Plugins page.
 4. That's it !
+
+== Screenshots ==
+
 
 == Frequently Asked Questions ==
 
@@ -72,7 +77,7 @@ This plugin is not intended to display WordPress datas. I blocked this for secur
 
 = How can I force the plugin to shows WP tables ? =
 
-You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
+You can remove the security check `line 58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
 
 = Why the language doesn't change? =
 
@@ -85,3 +90,5 @@ E.g for french : `//cdn.datatables.net/plug-ins/1.10.10/i18n/French.json` , the 
 
 = 0.1 =
 * First version
+
+== Upgrade Notice ==

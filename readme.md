@@ -13,8 +13,11 @@ All parameters that contain more than one value have to be separated by commas w
 Minimum needed : `[dbtable from=MysqlTableName]`
 
 - `select=field1,field2,field3` will display all rows of the table and only specified fields
-- `except=field1,field2,field3` will display all rows of the table but specified fields
-- `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
+- `except=field1,field2,field3` will display all rows of the table except specified fields
+- `cssClass=class1,class2` will add class1 and class2 to the <table class=""> attribut
+- `comments=true|(false)` true will use comments specified in each field of the MySql table as datatable column names. If true and if a comment is missing, the plugin fallback on field name only for the one missing, not for the entire table.
+- `pagination=true|(false)` will show/hide the bottom pagination links. If false, make sure you have the limit parameter large enough to display all your datas
+- `limit=25` Display 25 rows by default.
 
 ## Installation
 
@@ -43,10 +46,9 @@ You can edit the main `dbTable2dataTable.php` file and change these values :
               'select'      => null,     // Select specific columns
               'except'      => null,     // Ignore specific columns
               'cssclass'    => null,     // Specify custom CSS class for the <table>
-              'comments'    => false,    // Use field comments instead of column name
+              'comments'    => false,    // Use field comments of the MySql Table instead of column name
               'pagination'  => false,    // Enable / Disable pagination
               'limit'       => 25,       // Limit of results per page
-              'width'       => '100',    // Set width in % of the table
               'language'    => 'English' // Default language : French
             );
 
@@ -61,7 +63,7 @@ This plugin is not intended to display WordPress datas. I blocked this for secur
 
 #### How can I force the plugin to shows WP tables ?
 
-You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
+You can remove the security check `line 58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
 
 #### Why the language doesn't change?
 
