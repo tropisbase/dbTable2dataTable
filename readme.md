@@ -16,14 +16,14 @@ All parameters that contain more than one value have to be separated by commas w
 
 ## Installation
 
-### From your WordPress dashboard
+#### From your WordPress dashboard
 
 1. Visit 'Plugins > Add New'
 2. Search for 'DbTable2DataTable'
 3. Activate DbTable2DataTable from your Plugins page.
 4. That's it!
 
-### From WordPress.org
+#### From WordPress.org
 
 1. Download DbTable2DataTable.
 2. Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
@@ -32,11 +32,11 @@ All parameters that contain more than one value have to be separated by commas w
 
 ## Frequently Asked Questions
 
-### How do I change default values?
+#### How do I change default values?
 
 You can edit the main `dbTable2dataTable.php` file and change these values :
 
-        $this->defaults ### array(
+        $this->defaults #### array(
               'from'        => null,     // Mysql source table
               'select'      => null,     // Select specific columns
               'except'      => null,     // Ignore specific columns
@@ -49,19 +49,19 @@ You can edit the main `dbTable2dataTable.php` file and change these values :
             );
 
 
-### What the `comments` attribut does?
+#### What the `comments` attribut does?
 
 By default, column names will be the field name (e.g: product_id, custom_field). But if you want to have custom/pretty names you should modify your table and add comments to the fields (e.g : `ALTER TABLE product CHANGE product_id product_id INT( 11 ) COMMENT 'Product ID'`
 
-### Why can't I display datas from a Wordpress Table ?
+#### Why can't I display datas from a Wordpress Table ?
 
 This plugin is not intended to display WordPress datas. I blocked this for security reasons. It aims to give you the ability to show custom datas from custom tables. I had to extract informations from an ERP and display them.
 
-### How can I force the plugin to shows WP tables ?
+#### How can I force the plugin to shows WP tables ?
 
-You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) ==### $wpdb->prefix` 
+You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) ==#### $wpdb->prefix` 
 
-### Why the language doesn't change?
+#### Why the language doesn't change?
 
 You probably misstyped the language name. Make sure you write it exactly with the correct name.
 Refer to : https://www.datatables.net/plug-ins/i18n/
@@ -70,5 +70,5 @@ E.g for french : `//cdn.datatables.net/plug-ins/1.10.10/i18n/French.json` , the 
 
 ## Changelog
 
-### 0.1 =
+#### 0.1 =
 * First version
