@@ -5,8 +5,7 @@
    * Version: 0.1
    * Author: Guillaume Raineri
    * Author URI: https://github.com/rikemsen/
-   * License: Beerware
-   * License URI: https://en.wikipedia.org/wiki/Beerware
+   * License: GPLv2 or later
    */
 
 class dbTable2dataTable
