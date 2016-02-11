@@ -41,7 +41,6 @@ class dbTable2dataTable
               'comments'    => false,   // Use field comments instead of column name
               'pagination'  => false,   // Enable / Disable pagination
               'limit'       => 25,      // Limit of results per page
-              'width'       => '100',   // Set width in % of the table
               'language'    => 'English' // Default language : French
             );
     }
@@ -106,7 +105,7 @@ class dbTable2dataTable
       
       $cssClass = (!is_null($atts['cssclass']) AND strpos($atts['cssclass'], ',')) ? str_replace(',', ' ', $atts['cssclass']) : $atts['cssclass'];
 
-      $tableRendered .= '<div style="width:'.$atts['width'].'%;"><table class="dbtable2databable '.$cssClass.'">';
+      $tableRendered .= '<table class="dbtable2databable '.$cssClass.'">';
         $tableRendered .= '<thead>';
           $tableRendered .= '<tr>';
 
@@ -156,7 +155,7 @@ class dbTable2dataTable
           }
 
         $tableRendered .= '</tbody>';
-      $tableRendered .= '</table></div>';
+      $tableRendered .= '</table>';
 
       return $tableRendered;
     }
