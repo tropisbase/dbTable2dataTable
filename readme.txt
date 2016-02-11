@@ -11,24 +11,11 @@ Display mysql datas into datatable.
 
 == Description ==
 
-This plugin allows you to display the content of a mysql table into a sortable html table thanks to the DataTable jQuery Plugin
+This plugin allows you to display the content of MySql tables into sortable html tables thanks to the DataTable jQuery Plugin.
 
-For backwards compatibility, if this section is missing, the full length of the short description will be used, and
-Markdown parsed.
+You don't need any configuration and once installed, it is ready to use.
 
-== Installation ==
-
-This section describes how to install the plugin and get it working.
-
-1. Upload the plugin files to the `/wp-content/plugins/dbTable2dataTable` directory, or install the plugin through the WordPress plugins screen directly.
-1. Activate the plugin through the 'Plugins' screen in WordPress
-1. No more step needed.
-
-To use the plugin, simply add the shortcode `[dbtable]` in a page or article.
-
-Minimum needed : `[dbtable from=MysqlTable]`
-
-Optional parameters : `[dbtable from=MysqlTable optionName=optionValue]`
+Simply add the shortcode `[dbtable]` into an article or a page and you will have a nice and clean table.
 
 ###Examples:
 
@@ -37,6 +24,22 @@ All parameters that can contains more than one value have to be separated by com
 1. `select=field1,field2,field3` will display all rows of the table and only specified fields
 2. `except=field1,field2,field3` will display all rows of the table but specified fields
 3. `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
+
+== Installation ==
+
+= From your WordPress dashboard =
+
+1. Visit 'Plugins > Add New'
+2. Search for 'DbTable2DataTable'
+3. Activate DbTable2DataTable from your Plugins page.
+4. That's it!
+
+= From WordPress.org =
+
+1. Download DbTable2DataTable.
+2. Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
+3. Activate DbTable2DataTable from your Plugins page.
+4. That's it !
 
 == Frequently Asked Questions ==
 
