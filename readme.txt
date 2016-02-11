@@ -1,13 +1,13 @@
-=== Plugin Name ===
+=== DbTable2DataTable ===
 Contributors: rikemsen
-Tags: datatable, jquery, mysql, table
+Tags: datatable, jquery, mysql, table, sortable
 Requires at least: 4.4
 Tested up to: 4.4
 Stable tag: 4.4
 License: Beerware
 License URI: https://en.wikipedia.org/wiki/Beerware
 
-This plugin allows you to display the content of a mysql table into a sortable html table.
+Display mysql datas into datatable.
 
 == Description ==
 
@@ -20,7 +20,6 @@ Markdown parsed.
 
 This section describes how to install the plugin and get it working.
 
-
 1. Upload the plugin files to the `/wp-content/plugins/dbTable2dataTable` directory, or install the plugin through the WordPress plugins screen directly.
 1. Activate the plugin through the 'Plugins' screen in WordPress
 1. No more step needed.
@@ -31,14 +30,13 @@ Minimum needed : `[dbtable from=MysqlTable]`
 
 Optional parameters : `[dbtable from=MysqlTable optionName=optionValue]`
 
-###Exemples:
+###Examples:
 
 All parameters that can contains more than one value have to be separated by commas without spaces.
 
 1. `select=field1,field2,field3` will display all rows of the table and only specified fields
 2. `except=field1,field2,field3` will display all rows of the table but specified fields
-3. `cssClass=class1,class2`
-4. 
+3. `cssClass=class1,class2` will add class1 and class 2 to the <table class=""> attribut
 
 == Frequently Asked Questions ==
 
@@ -74,16 +72,11 @@ You can remove the security check line `58` by deleting ` or substr($atts['from'
 = Why the language doesn't change? =
 
 You probably misstyped the language name. Make sure you write it exactly with the correct name.
-
 Refer to : https://www.datatables.net/plug-ins/i18n/
 
 E.g for french : `//cdn.datatables.net/plug-ins/1.10.10/i18n/French.json` , the parameter will be `French` with the first letter in uppercase.
 
-== Screenshots ==
-
-
 == Changelog ==
 
 = 0.1 =
-
-First version
+* First version

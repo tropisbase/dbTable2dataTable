@@ -104,7 +104,7 @@ class dbTable2dataTable
             $select[] = $atts['select'];
       }
       
-      $cssClass = ( !is_null($atts['cssclass']) AND strpos($atts['cssclass'], ',')) ? str_replace(',', ' ', $atts['cssclass']) : $atts['cssclass'];
+      $cssClass = (!is_null($atts['cssclass']) AND strpos($atts['cssclass'], ',')) ? str_replace(',', ' ', $atts['cssclass']) : $atts['cssclass'];
 
       $tableRendered .= '<div style="width:'.$atts['width'].'%;"><table class="dbtable2databable '.$cssClass.'">';
         $tableRendered .= '<thead>';
