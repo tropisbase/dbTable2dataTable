@@ -1,12 +1,13 @@
 <?php
-  /*
-  Plugin Name: DbTable to DataTable
-  Description: Display data from a custom database table into a datatable
-  Version: 1.0
-  Author: Guillaume RAINERI
-  License: Beerware
-  License URI: https://en.wikipedia.org/wiki/Beerware
-  */
+  /**
+   * Plugin Name: DbTable to DataTable
+   * Description: Display data from a custom database table into a datatable
+   * Version: 0.1
+   * Author: Guillaume Raineri
+   * Author URI: https://github.com/rikemsen/
+   * License: Beerware
+   * License URI: https://en.wikipedia.org/wiki/Beerware
+   */
 
 class dbTable2dataTable
 {

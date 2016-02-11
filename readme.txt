@@ -1,4 +1,4 @@
-=== DbTable2DataTable ===
+=== DbTable to DataTable ===
 Contributors: rikemsen
 Tags: datatable, jquery, mysql, table, sortable
 Requires at least: 4.4
@@ -30,15 +30,15 @@ All parameters that contain more than one value have to be separated by commas w
 = From your WordPress dashboard =
 
 1. Visit 'Plugins > Add New'
-2. Search for 'DbTable2DataTable'
-3. Activate DbTable2DataTable from your Plugins page.
+2. Search for 'DbTable to DataTable'
+3. Activate DbTable to DataTable from your Plugins page.
 4. That's it!
 
 = From WordPress.org =
 
-1. Download DbTable2DataTable.
+1. Download DbTable to DataTable.
 2. Upload the 'DbTable2DataTable' directory to your '/wp-content/plugins/' directory, using your favorite method (ftp, sftp, scp, etc...)
-3. Activate DbTable2DataTable from your Plugins page.
+3. Activate 'DbTable to DataTable' from your Plugins page.
 4. That's it !
 
 == Frequently Asked Questions ==
