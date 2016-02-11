@@ -19,7 +19,7 @@ Simply add the shortcode `[dbtable]` into an article or a page and you will have
 
 ###Examples:
 
-All parameters that can contains more than one value have to be separated by commas without spaces.
+All parameters that contain more than one value have to be separated by commas without spaces.
 
 1. `select=field1,field2,field3` will display all rows of the table and only specified fields
 2. `except=field1,field2,field3` will display all rows of the table but specified fields
@@ -43,7 +43,7 @@ All parameters that can contains more than one value have to be separated by com
 
 == Frequently Asked Questions ==
 
-= How do i change default values? =
+= How do I change default values? =
 
 You can edit the main `dbTable2dataTable.php` file and change these values :
 
