@@ -59,7 +59,7 @@ This plugin is not intended to display WordPress datas. I blocked this for secur
 
 #### How can I force the plugin to shows WP tables ?
 
-You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) ==#### $wpdb->prefix` 
+You can remove the security check line `58` by deleting ` or substr($atts['from'], 0,strlen($wpdb->prefix)) === $wpdb->prefix` 
 
 #### Why the language doesn't change?
 
